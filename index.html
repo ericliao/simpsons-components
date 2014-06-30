@@ -6,14 +6,6 @@
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-
-	<!-- Importing Web Component's Polyfill -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130816/polymer.min.js"></script>
-
-	<!-- Importing Custom Elements -->
-	<link rel="import" href="src/homer.html">
-	<link rel="import" href="src/bart.html">
-	<link rel="import" href="src/marge.html">
 </head>
 <body>
 	<!-- Using Custom Elements -->
@@ -31,25 +23,34 @@
 		<div class="container characters">
 	        <div class="row character-row">
 				<div class="col-md-2">
-					<homer></homer>
+					<homer-component></homer-component>
 				</div>
 				<div class="col-md-2">  
-					<homer blinkleft="false"></homer>
+					<homer-component blinkleft="false"></homer-component>
 				</div>
 				<div class="col-md-2">
-					<bart></bart>
+					<bart-component></bart-component>
 				</div>
 				<div class="col-md-2">
-					<bart color="green"></bart>
+					<bart-component color="green"></bart-component>
 				</div>
 				<div class="col-md-2">
-					<marge></marge>
+					<marge-component></marge-component>
 				</div>
 				<div class="col-md-2">
-					<marge haircolor="red" hairshadow="darkred"></marge>
+					<marge-component haircolor="red" hairshadow="darkred"></marge-component>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<!-- Importing Web Component's Polyfill -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.3.3/platform.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.3.3/polymer.js"></script>
+
+	<!-- Importing Custom Elements -->
+	<link rel="import" href="src/homer.html">
+	<link rel="import" href="src/bart.html">
+	<link rel="import" href="src/marge.html">
 </body>
 </html>
