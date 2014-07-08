@@ -1,0 +1,53 @@
+<polymer-element name="krusty-component" attributes="height width color haircolor">
+    <template>
+        <div class="krusty">
+        </div>
+
+        <style>
+            .krusty *
+            {
+                position: absolute;
+                box-sizing:content-box;
+                -moz-box-sizing:content-box;
+            }
+
+            .krusty
+            {
+                position: relative;
+                width: {{width}}px;
+                height: {{height}}px;
+                margin: 0 auto;
+            }
+            
+            .krusty .head *
+            {
+                border: 1px solid #110b00;
+            }
+
+            .krusty .head .no-border
+            {
+                border: none;
+            }
+
+            .krusty .head .body
+            {
+                background: {{color}};
+            }
+            
+            .krusty .head .hair
+            {
+                background: {{haircolor}};
+            }
+        </style>
+    </template>
+
+    <script>
+        var options = {
+            width     : '140',
+            height    : '205',
+            color     : '#fbd800',
+            haircolor : '#107dc0'
+        };
+        Polymer('krusty-component', options);
+    </script>
+</polymer-element>
