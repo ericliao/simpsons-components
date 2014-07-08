@@ -1,95 +1,111 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>&lt;Simpsons&gt;</title>
+	<head>
+		<meta charset="UTF-8">
+		<title>&lt;Simpsons&gt;</title>
 
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-</head>
-<body>
-	<!-- Using Custom Elements -->
-	<div id="wrap">
-		<div class="container header">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>The Simpsons Web Components</h1>
-                    <p>Below are some Simpsons characters web components using Polymer</p>
-                    <p>Based on the CSS Simpsons characters by <a href="http://www.chrispattle.com">Chris Pattle</a>.</p>
-                    <p><a class="btn btn-large btn-primary" href="https://www.github.com/ericliao/simpsons-components">View on Github</a>
-                </div>
-            </div>
-        </div>
-		<div class="container characters">
-	        <div class="row character-row">
-				<div class="col-md-2">
-					<homer-component></homer-component>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+		<!-- Using Custom Elements -->
+		<div id="wrap">
+			<div class="container header">
+	            <div class="row">
+	                <div class="col-md-12">
+	                    <h1>The Simpsons Web Components</h1>
+	                    <p>Below are some Simpsons characters web components using Polymer</p>
+	                    <p>Based on the CSS Simpsons characters by <a href="http://www.chrispattle.com">Chris Pattle</a>.</p>
+	                    <p><a class="btn btn-large btn-primary" href="https://www.github.com/ericliao/simpsons-components">View on Github</a>
+	                </div>
+	            </div>
+	        </div>
+			<div class="container characters">
+		        <div class="row character-row">
+					<div class="col-md-2">
+						<homer-component></homer-component>
+					</div>
+					<div class="col-md-2">  
+						<homer-component blinkleft="false"></homer-component>
+					</div>
+					<div class="col-md-2">
+						<bart-component></bart-component>
+					</div>
+					<div class="col-md-2">
+						<bart-component color="green"></bart-component>
+					</div>
+					<div class="col-md-2">
+						<marge-component></marge-component>
+					</div>
+					<div class="col-md-2">
+						<marge-component haircolor="red" hairshadow="darkred"></marge-component>
+					</div>
+				</div>				
+				<div class="row character-row">
+					<div class="col-md-2">
+						<lisa-component></lisa-component>
+					</div>
+					<div class="col-md-2">
+						<lisa-component necklace="pink"></lisa-component>
+					</div>
+					<div class="col-md-2">
+						<maggie-component></maggie-component>
+					</div>
+					<div class="col-md-2">
+						<maggie-component bow="red" dummy="lightblue"></maggie-component>
+					</div>
+					<div class="col-md-2">
+						<mr-burns-component></mr-burns-component>
+					</div>
+					<div class="col-md-2">
+						<mr-burns-component haircolor="purple"></mr-burns-component>
+					</div>
 				</div>
-				<div class="col-md-2">  
-					<homer-component blinkleft="false"></homer-component>
+				<div class="row character-row">
+					<div class="col-md-2">
+						<ned-flanders-component></ned-flanders-component>
+					</div>
+					<div class="col-md-2">
+						<ned-flanders-component haircolor="blue"></ned-flanders-component>
+					</div>
+					<div class="col-md-2">
+						<krusty-component></krusty-component>
+					</div>
+					<div class="col-md-2">
+						<krusty-component haircolor="black"></krusty-component>
+					</div>
+					<div class="col-md-2">
+						<itchy-component></itchy-component>
+					</div>
+					<div class="col-md-2">
+						<itchy-component color="red" earshadow="darkred"></itchy-component>
+					</div>
 				</div>
-				<div class="col-md-2">
-					<bart-component></bart-component>
-				</div>
-				<div class="col-md-2">
-					<bart-component color="green"></bart-component>
-				</div>
-				<div class="col-md-2">
-					<marge-component></marge-component>
-				</div>
-				<div class="col-md-2">
-					<marge-component haircolor="red" hairshadow="darkred"></marge-component>
-				</div>
-			</div>				
-			<div class="row character-row">
-				<div class="col-md-2">
-					<lisa-component></lisa-component>
-				</div>
-				<div class="col-md-2">
-					<lisa-component necklace="pink"></lisa-component>
-				</div>
-				<div class="col-md-2">
-					<maggie-component></maggie-component>
-				</div>
-				<div class="col-md-2">
-					<maggie-component bow="red" dummy="lightblue"></maggie-component>
-				</div>
-				<div class="col-md-2">
-					<mr-burns-component></mr-burns-component>
-				</div>
-				<div class="col-md-2">
-					<mr-burns-component haircolor="purple"></mr-burns-component>
-				</div>
-			</div>
-			<div class="row character-row">
-				<div class="col-md-2">
-					<ned-flanders-component></ned-flanders-component>
-				</div>
-				<div class="col-md-2">
-					<ned-flanders-component haircolor="blue"></ned-flanders-component>
-				</div>
-				<div class="col-md-2">
-					<krusty-component></krusty-component>
-				</div>
-				<div class="col-md-2">
-					<krusty-component haircolor="black"></krusty-component>
+				<div class="row character-row">
+					<div class="col-md-2">
+						<smithers-component></smithers-component>
+					</div>
+					<div class="col-md-2">
+						<smithers-component color="white"></smithers-component>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- Importing Web Component's Polyfill -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.3.3/platform.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.3.3/polymer.js"></script>
+		<!-- Importing Web Component's Polyfill -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.3.3/platform.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.3.3/polymer.js"></script>
 
-	<!-- Importing Custom Elements -->
-	<link rel="import" href="src/homer/homer.html">
-	<link rel="import" href="src/bart/bart.html">
-	<link rel="import" href="src/marge/marge.html">
-	<link rel="import" href="src/lisa/lisa.html">
-	<link rel="import" href="src/maggie/maggie.html">
-	<link rel="import" href="src/mr-burns/mr-burns.html">
-	<link rel="import" href="src/ned-flanders/ned-flanders.html">
-	<link rel="import" href="src/krusty/krusty.html">
-</body>
+		<!-- Importing Custom Elements -->
+		<link rel="import" href="src/homer/homer.html">
+		<link rel="import" href="src/bart/bart.html">
+		<link rel="import" href="src/marge/marge.html">
+		<link rel="import" href="src/lisa/lisa.html">
+		<link rel="import" href="src/maggie/maggie.html">
+		<link rel="import" href="src/mr-burns/mr-burns.html">
+		<link rel="import" href="src/ned-flanders/ned-flanders.html">
+		<link rel="import" href="src/krusty/krusty.html">
+		<link rel="import" href="src/itchy/itchy.html">
+		<link rel="import" href="src/smithers/smithers.html">
+	</body>
 </html>
