@@ -28,3 +28,7 @@ html, body
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+.panel-footer {
+    padding: 5px 5px;
+}

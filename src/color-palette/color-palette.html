@@ -1,0 +1,45 @@
+<polymer-element name="color-palette-component" attributes="custom">
+    <template>
+        <style>
+            .palette {
+                height: 20px;
+            }
+
+            .colorlabel {
+                float: left;
+                margin-right: 5px;
+            }
+
+            .palette .colorwell {
+                margin: .3em .37em 0 0;
+                float: left;
+                cursor: pointer;
+                width: 12.5px;
+                height: 14px
+            }
+        </style>
+        <div class="palette" data-custom="{{custom}}">
+            <div class="colorlabel">Color:</div>
+            <div style="background-color:#1B95D9;" class="colorwell"></div>
+            <div style="background-color:#F05E27;" class="colorwell"></div>
+            <div style="background-color:#86D1E4;" class="colorwell"></div>
+            <div style="background-color:#75B000;" class="colorwell"></div>
+            <div style="background-color:#FFD512;" class="colorwell"></div>
+            <div style="background-color:#0662B0;" class="colorwell"></div>
+        </div>
+    </template>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        Polymer("color-palette-component", {
+            ready: function () {
+                var that = this;
+                var $colorwells = $(this.shadowRoot.querySelectorAll(".colorwell"));
+                $colorwells.on("click", function (e) {
+                    var color = $(this).css("background-color");
+                    var attrib = $(that.shadowRoot.querySelector(".palette")).data("custom");
+                    $(that).parents(".custom").children().children()[0][attrib] = color;
+                });
+            }
+        });
+    </script>
+</polymer-element>

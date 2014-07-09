@@ -53,12 +53,12 @@
 						</div>
 					</div>
 					<div class="col-md-2">
-						<div class="panel panel-default">
+						<div class="panel panel-default custom">
 							<div class="panel-body">
 								<bart-component color="green"></bart-component>
 							</div>
 							<div class="panel-footer">
-								color = "green"
+								<color-palette-component custom="color"></color-palette-component>
 							</div>
 						</div>
 					</div>
@@ -73,12 +73,12 @@
 						</div>
 					</div>
 					<div class="col-md-2">
-						<div class="panel panel-default">
+						<div class="panel panel-default custom">
 							<div class="panel-body">
 								<marge-component haircolor="red" hairshadow="darkred"></marge-component>
 							</div>
 							<div class="panel-footer">
-								hair = "red"
+								<color-palette-component custom="haircolor"></color-palette-component>
 							</div>
 						</div>
 					</div>
@@ -95,12 +95,12 @@
 						</div>
 					</div>
 					<div class="col-md-2">
-						<div class="panel panel-default">
+						<div class="panel panel-default custom">
 							<div class="panel-body">
 								<lisa-component necklace="pink"></lisa-component>
 							</div>
 							<div class="panel-footer">
-								necklace = "pink"
+								<color-palette-component custom="necklace"></color-palette-component>
 							</div>
 						</div>
 					</div>
@@ -115,12 +115,13 @@
 						</div>
 					</div>
 					<div class="col-md-2">
-						<div class="panel panel-default">
+						<div class="panel panel-default custom">
 							<div class="panel-body">
 								<maggie-component bow="red" dummy="lightblue"></maggie-component>
 							</div>
 							<div class="panel-footer">
-								bow = "red"<br/>dummy = "lightblue"
+								<color-palette-component custom="bow"></color-palette-component>
+								<color-palette-component custom="dummy"></color-palette-component>
 							</div>
 						</div>
 					</div>
@@ -135,12 +136,12 @@
 						</div>
 					</div>
 					<div class="col-md-2">
-						<div class="panel panel-default">
+						<div class="panel panel-default custom">
 							<div class="panel-body">
 								<mr-burns-component haircolor="purple"></mr-burns-component>
 							</div>
 							<div class="panel-footer">
-								haircolor = "purple"
+								<color-palette-component custom="haircolor"></color-palette-component>
 							</div>
 						</div>
 					</div>
@@ -157,12 +158,12 @@
 						</div>
 					</div>
 					<div class="col-md-2">
-						<div class="panel panel-default">
+						<div class="panel panel-default custom">
 							<div class="panel-body">
 								<ned-flanders-component haircolor="blue"></ned-flanders-component>
 							</div>
 							<div class="panel-footer">
-								haircolor = "blue"
+								<color-palette-component custom="haircolor"></color-palette-component>
 							</div>
 						</div>
 					</div>
@@ -177,12 +178,12 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="panel panel-default">
+						<div class="panel panel-default custom">
 							<div class="panel-body">
 								<krusty-component haircolor="black"></krusty-component>
 							</div>
 							<div class="panel-footer">
-								haircolor = "black"
+								<color-palette-component custom="haircolor"></color-palette-component>
 							</div>
 						</div>
 					</div>
@@ -199,12 +200,12 @@
 						</div>
 					</div>
 					<div class="col-md-3">
-						<div class="panel panel-default">
+						<div class="panel panel-default custom">
 							<div class="panel-body">
 								<itchy-component color="red" earshadow="darkred"></itchy-component>
 							</div>
 							<div class="panel-footer">
-								color = "red"
+								<color-palette-component custom="color"></color-palette-component>
 							</div>
 						</div>
 					</div>
@@ -219,12 +220,12 @@
 						</div>
 					</div>
 					<div class="col-md-2">
-						<div class="panel panel-default">
+						<div class="panel panel-default custom">
 							<div class="panel-body">
 								<smithers-component color="white"></smithers-component>
 							</div>
 							<div class="panel-footer">
-								color = "white"
+								<color-palette-component custom="color"></color-palette-component>
 							</div>
 						</div>
 					</div>
@@ -241,12 +242,12 @@
 						</div>
 					</div>
 					<div class="col-md-2">
-						<div class="panel panel-default">
+						<div class="panel panel-default custom">
 							<div class="panel-body">
 								<comic-book-guy-component haircolor="white"></comic-book-guy-component>
 							</div>
 							<div class="panel-footer">
-								haircolor = "white"
+								<color-palette-component custom="haircolor"></color-palette-component>
 							</div>
 						</div>
 					</div>
@@ -261,12 +262,12 @@
 						</div>
 					</div>
 					<div class="col-md-2">
-						<div class="panel panel-default">
+						<div class="panel panel-default custom">
 							<div class="panel-body">
 								<ralph-wiggum-component color="white"></ralph-wiggum-component>
 							</div>
 							<div class="panel-footer">
-								color = "white"
+								<color-palette-component custom="color"></color-palette-component>
 							</div>
 						</div>
 					</div>
@@ -281,12 +282,12 @@
 						</div>
 					</div>
 					<div class="col-md-2">
-						<div class="panel panel-default">
+						<div class="panel panel-default custom">
 							<div class="panel-body">
 								<apu-component color="yellow"></apu-component>
 							</div>
 							<div class="panel-footer">
-								Color = "yellow"
+								<color-palette-component custom="color"></color-palette-component>
 							</div>
 						</div>
 					</div>
@@ -299,6 +300,7 @@
 		<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.3.3/polymer.js"></script>
 
 		<!-- Importing Custom Elements -->
+		<link rel="import" href="src/color-palette/color-palette.html">
 		<link rel="import" href="src/homer/homer.html">
 		<link rel="import" href="src/bart/bart.html">
 		<link rel="import" href="src/marge/marge.html">
